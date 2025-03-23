@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.welcome_page{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./27099.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.header{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0));
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 15px;
+}
+.icon{
+    display: inline-flex;
+    width: 50%;
+}
+.navigation{
+    display: inline-flex;
+    width: 50%;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+}
+.nav-el {
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    padding: 35px;
+    text-align: center;
+}
+.nav-el a{
+    text-decoration: none;
+    color: wheat;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.nav-el a:hover{
+    border-color: orangered;
+}
+.body-text h1{
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 7vh;
+    font-weight: 200;
+}
+.body{
+    height: calc(69vh);
+    padding-left: 8.5rem;
+    padding-top: 5rem;
+}
+.buttons button{
+    background: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid orangered;
+    font-size: 4vh;
+    font-weight: 100;
+    border-radius: 4vh;
+    color: orangered;
+    padding: 10px 30px 10px 30px;
+    transition: 0.3s ease;
+}
+.buttons .button-hungry{
+    color: wheat;
+    background: orangered;
+    margin-right: 15px;
+}
+.buttons .button-hungry:hover{
+    background: rgb(190, 51, 0);
+    border-color: rgb(190, 51, 0);
+}
+.buttons  .button-more:hover{
+    background: rgb(190, 51, 0);
+    border-color: rgb(190, 51, 0);
+    color: wheat;
+}
+.menu{
+    background: wheat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;   
+}
+.menu h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 6vh;
+    font-weight: 200;
+    margin: 0;
+    padding: 3rem;
+}
+.menu .header2{
+    width: 100%;
+    text-align: center;
+}
+.header2 h1::after{
+    display: block;
+    height: 2px;
+    background-color: #ff4500;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.bio{
+    margin: 0 16rem;
+}
+.bio p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-size: 3vh;
+    margin: 0;
+    text-align: center;
+}
+.cards{
+    list-style: none;
+    width: 225px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+.deck{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px 0 0 0 ;
+}
+.hy{
+    font-weight: 700;
+}
+.hy::after{
+    display: block;
+    height: 2px;
+    background-color: #ff4500;
+    content: " ";
+    width: 100px;
+    margin: 0;
+    margin-top: 5px;
+}
