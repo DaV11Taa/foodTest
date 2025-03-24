@@ -1,6 +1,8 @@
+*{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
-    scroll-behavior: smooth;
 }
 .welcome_page{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./27099.jpg);
@@ -82,21 +84,21 @@ body{
     border-color: rgb(190, 51, 0);
     color: wheat;
 }
-.menu{
+.menu, .instructions{
     background: wheat;
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
     background-position: center center;   
 }
-.menu h1{
+.menu h1, .instructions h1, .reviews h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 6vh;
-    font-weight: 200;
+    font-weight: 600;
     margin: 0;
     padding: 3rem;
 }
-.menu .header2{
+.menu .header2, .instructions .header2, .reviews .header2{
     width: 100%;
     text-align: center;
 }
@@ -145,7 +147,8 @@ body{
 }
 .gallery{
     background: wheat;
-    margin: 0;
+    padding: 2rem 0 1rem 0;
+    height: 45vw;
 }
 .frame{
     list-style: none;
@@ -159,7 +162,7 @@ body{
 }
 .tits{
     width: 25%;
-    height: 25vw;
+    height: 22vw;
     overflow: hidden;
 }
 .boobs{
@@ -171,4 +174,94 @@ body{
 .tits:hover .boobs{
     filter: brightness(1);
     transform: scale(1.1);
+}
+.instructions{
+    height: 90vh;
+}
+.instructions .header2 h1::after{
+    display: block;
+    height: 2px;
+    background-color: #ff4500;
+    content: " ";
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.inb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7rem 0 7rem;
+}
+.inb .foto{
+    display: flex;
+    margin: 1rem;
+    position: relative;
+    border-radius: 7rem;
+    overflow: hidden;
+    max-width: 600px;
+
+}
+.inb .foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 7rem;
+}
+.inb .foto::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 0%, black 100%);
+    border-radius: 7rem;
+}
+.inb .instruction{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+.reviews h1{
+    color: wheat;
+}
+.reviews{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.rev-cards{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    width: 25vw;
+    color: wheat;
+    background: rgba(0,0,0,0.5);
+    border-radius: 2rem;
+}
+.rev-cards .quotes{
+    font-size: 4rem;
+}
+.rev-cards .review-text{
+    font-style: italic;
+}
+.rev-cards img{
+    height: 3rem;
+    border-radius: 3rem;
+    margin-right: 1rem;
+}
+.rev-cards .autor{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    font-weight: 900;   
+}
+.rev-deck{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
