@@ -2,10 +2,11 @@
     scroll-behavior: smooth;
 }
 body{
+    position: relative;
     margin: 0;
 }
 .welcome_page{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./27099.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./images/27099.jpg);
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
@@ -229,7 +230,7 @@ body{
     color: wheat;
 }
 .reviews{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./wallpaperflare.com_wallpaper.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./images/wallpaperflare.com_wallpaper.jpg);
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
@@ -264,4 +265,32 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+.home{ 
+    position: fixed; 
+    z-index: 1000; 
+    bottom: 0; 
+    right: 0;
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+}
+.home a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background: orangered;
+    transition: 0.3s ease-out;
+}
+.home a:hover{
+    color: orangered;
+    font-size: 2rem;
+    background: wheat;
 }
