@@ -131,6 +131,7 @@ body{
 .deck{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 50px 0 0 0 ;
 }
@@ -323,6 +324,9 @@ body{
     font-size: 2rem;
 }
 .ass ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0 0 0 1rem;
     font-family: 'Courier New', Courier, monospace;
@@ -340,4 +344,91 @@ body{
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
+}
+.booty{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./images/juicy-meat1.avif);
+    background-size: cover;
+    height: auto;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.left-leg{
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 3rem;
+    height: 30vh;
+    text-align: center;
+    align-items: center;
+    color: wheat;
+    margin-bottom: 5vh;
+}
+.left-leg h1{
+    font-size: 3rem;
+    margin: 0;
+}
+.left-leg h3{
+    font-size: 2rem;
+    color: #ff4500;
+    font-style: italic;    
+}
+.right-leg{
+    display: flex;
+    padding-bottom: 20vh;
+}
+.socialoffer{
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    list-style: none;
+    color: wheat;
+    font-size: 2rem;
+}
+.li-it{
+    display: flex;
+    margin-right: 4rem;
+    transition: 0.5s ease;
+    align-items: center;
+}
+.li-it a{
+    text-decoration: none;
+    color: wheat;
+}
+.li-it svg{
+    height: 2rem;
+    margin-right: 1rem;
+}
+.li-it:hover{
+    padding-top: 1rem;
+    margin-bottom: -1rem;
+}
+.thighs{
+    padding: 0 1rem;
+    color: wheat;
+    font-size: 1.2rem;
+}
+.butt{
+    padding-bottom: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.comment{
+    padding: 0 2rem;
+    color: #ff4500;
+    text-align: start;
+}
+.comment p{
+    margin: 1rem 0;
+    font-weight: 200;
+}
+.author{
+    padding: 0 2rem;
+    color: #ff4500;
+    text-align: end;
+}
+.author p{
+    margin: 1rem 0;
+    font-weight: 600;
 }
